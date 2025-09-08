@@ -1,0 +1,48 @@
+{
+  "name": "cwtc3/posts-cluster",
+  "title": "Posts Cluster",
+  "description": "",
+  "style": "",
+  "script": "",
+  "category": "cwtc3_page_blocks",
+  "icon": {
+    "background": "#fff",
+    "foreground": "#000",
+    "src": "groups"
+  },
+  "apiVersion": 2,
+  "keywords": ["cwtc3", "cards", "content"],
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "render.php"
+  },
+  "styles": [],
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true
+  },
+  "supports": {
+    "align": ["full"],
+    "anchor": true,
+    "alignContent": false,
+    "color": {
+      "text": true,
+      "background": false,
+      "link": false
+    },
+    "alignText": false,
+    "fullHeight": false,
+    "multiple": true,
+	"spacing": {
+	  "margin": true,
+	  "padding": true,
+	  "blockGap": true
+	}
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    }
+  }
+}

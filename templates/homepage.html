@@ -1,0 +1,18 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<div class="pt-[calc(var(--headerHeight))] mt-[0]!"></div>
+
+<!-- wp:group {"tagName":"main","layout":{"type":"flow"}} -->
+<main class="min-h-[--contentHeight] mt-[0]! pt-[calc(var(--rails)*2)]">
+	<!-- wp:post-content /-->
+</main>
+<!-- /wp:group -->
+
+<div class="relative flex items-start w-full h-[280px] md:h-[var(--homeHeight)] overflow-hidden mt-[0]! mb-[var(--rails)]">
+<!-- <video width="320" height="240" autoplay muted class="absolute w-[100%] h-[100%] top-[0] bottom-[0] left-[0] right-[0] object-cover fixed z-0"> -->
+<video width="320" height="240" autoplay muted loop class="absolute bottom-[0] left-[0] w-full">
+  <source src="/wp-content/themes/cwtc-v3/assets/espresso.mp4" type="video/mp4">
+</video>
+</div>
+
+<!-- wp:template-part {"slug":"footer"} /-->

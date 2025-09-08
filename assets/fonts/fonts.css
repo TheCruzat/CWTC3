@@ -1,0 +1,125 @@
+/*
+@font-face {
+	font-family: "Architects Daughter";
+	src: url('./assets/fonts/ArchitectsDaughter-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Special Elite";
+	src: url('./assets/fonts/SpecialElite-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Gochi Hand";
+	src: url('./assets/fonts/GochiHand-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Nanum Brush";
+	src: url('./assets/fonts/NanumBrushScript-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Nanum Pen";
+	src: url('./assets/fonts/NanumPenScript-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Permanent Marker";
+	src: url('./assets/fonts/PermanentMarker-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Schoolbell";
+	src: url('./assets/fonts/Schoolbell-Regular.ttf');
+}
+
+*/
+
+
+@font-face {
+	font-family: "Courier Prime";
+	src: url('./assets/fonts/CourierPrime-Regular.ttf');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Courier Prime";
+	src: url('./assets/fonts/CourierPrime-Bold.ttf');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Courier Prime";
+	src: url('./assets/fonts/CourierPrime-Italic.ttf');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Courier Prime";
+	src: url('./assets/fonts/CourierPrime-BoldItalic.ttf');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+/*
+@font-face {
+	font-family: "Cardo";
+	src: url('./assets/fonts/Cardo-Regular.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cardo";
+	src: url('./assets/fonts/Cardo-Bold.ttf');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cardo";
+	src: url('./assets/fonts/Cardo-Italic.ttf');
+	font-weight: 400;
+	font-style: italic;
+}
+*/
+
+@font-face {
+	font-family: "Noto Serif";
+	src: url('./assets/fonts/NotoSerif-VariableFont_wdth,wght.ttf');
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Noto Serif";
+	src: url('./assets/fonts/NotoSerif-Italic-VariableFont_wdth,wght.ttf');
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Caveat";
+	src: url('./assets/fonts/Caveat-VariableFont_wght.ttf');
+	font-display: swap;
+}
+
+/*
+@font-face {
+	font-family: "Long Cang";
+	src: url('./assets/fonts/LongCang-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Shadows Into Light 2";
+	src: url('./assets/fonts/ShadowsIntoLightTwo-Regular.ttf');
+}
+*/

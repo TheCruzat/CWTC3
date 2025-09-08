@@ -1,0 +1,523 @@
+{
+    "key": "group_5bb5c54dcf1b6",
+    "title": "Code Samples",
+    "fields": [
+        {
+            "key": "field_555275c1be8a5",
+            "label": "Downloadable Assets",
+            "name": "down_ass",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "table",
+            "button_label": "Add Link",
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_555275e6be8a6",
+                    "label": "Link Label",
+                    "name": "label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "parent_repeater": "field_555275c1be8a5"
+                },
+                {
+                    "key": "field_555275f8be8a7",
+                    "label": "Link Asset",
+                    "name": "asset",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "library": "all",
+                    "return_format": "array",
+                    "min_size": 0,
+                    "max_size": 0,
+                    "mime_types": "",
+                    "parent_repeater": "field_555275c1be8a5"
+                }
+            ],
+            "rows_per_page": 20
+        },
+        {
+            "key": "field_546f588235da9",
+            "label": "Code Example Sets",
+            "name": "settice",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "row",
+            "button_label": "Add Settice",
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_546f58c335daa",
+                    "label": "Types",
+                    "name": "types",
+                    "aria-label": "",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "html": "HTML",
+                        "css": "CSS",
+                        "js": "JavaScript",
+                        "jq": "JQuery",
+                        "php": "PHP"
+                    },
+                    "default_value": [],
+                    "layout": "horizontal",
+                    "allow_custom": 0,
+                    "save_custom": 0,
+                    "toggle": 0,
+                    "return_format": "value",
+                    "custom_choice_button_text": "Add new choice",
+                    "parent_repeater": "field_546f588235da9"
+                },
+                {
+                    "key": "field_546f594d35dab",
+                    "label": "HTML",
+                    "name": "html",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_546f58c335daa",
+                                "operator": "==",
+                                "value": "html"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "",
+                    "parent_repeater": "field_546f588235da9"
+                },
+                {
+                    "key": "field_546f59b835dac",
+                    "label": "CSS",
+                    "name": "css",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_546f58c335daa",
+                                "operator": "==",
+                                "value": "css"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "",
+                    "parent_repeater": "field_546f588235da9"
+                },
+                {
+                    "key": "field_547cf91d55025",
+                    "label": "JavaScript",
+                    "name": "js",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_546f58c335daa",
+                                "operator": "==",
+                                "value": "js"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "",
+                    "parent_repeater": "field_546f588235da9"
+                },
+                {
+                    "key": "field_547cf92e55026",
+                    "label": "JQuery",
+                    "name": "jq",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_546f58c335daa",
+                                "operator": "==",
+                                "value": "jq"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "",
+                    "parent_repeater": "field_546f588235da9"
+                },
+                {
+                    "key": "field_546f5a8835daf",
+                    "label": "PHP",
+                    "name": "php",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_546f58c335daa",
+                                "operator": "==",
+                                "value": "php"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "",
+                    "parent_repeater": "field_546f588235da9"
+                },
+                {
+                    "key": "field_54950988584bc",
+                    "label": "Code Height",
+                    "name": "code_height",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "html\/css\/js\/jq\/php",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "180px",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "parent_repeater": "field_546f588235da9"
+                },
+                {
+                    "key": "field_547cfd88826e7",
+                    "label": "Options",
+                    "name": "options",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_546f588235da9"
+                },
+                {
+                    "key": "field_546f61861829e",
+                    "label": "Spawn Example",
+                    "name": "spawn",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_547cfd88826e7",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_546f588235da9"
+                },
+                {
+                    "key": "field_54d46afb005f4",
+                    "label": "Spawn Height",
+                    "name": "spawn_height",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_546f61861829e",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 200,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "parent_repeater": "field_546f588235da9"
+                },
+                {
+                    "key": "field_54d496a479890",
+                    "label": "Spawn Trigger",
+                    "name": "spawn_trigger",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_546f61861829e",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_546f588235da9"
+                },
+                {
+                    "key": "field_547cfdbb826e8",
+                    "label": "Hide Header",
+                    "name": "hide_header",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_547cfd88826e7",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_546f588235da9"
+                }
+            ],
+            "rows_per_page": 20
+        },
+        {
+            "key": "field_55bd3c253aebf",
+            "label": "CodePen Embeds",
+            "name": "codepen_embeds",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "table",
+            "button_label": "Add CodePen Embed",
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_55bd3d1e3aec0",
+                    "label": "CodePen URL",
+                    "name": "url",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "html",
+                    "maxlength": "",
+                    "parent_repeater": "field_55bd3c253aebf"
+                },
+                {
+                    "key": "field_55bd3d5817cc4",
+                    "label": "Height",
+                    "name": "h",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 300,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": "",
+                    "parent_repeater": "field_55bd3c253aebf"
+                }
+            ],
+            "rows_per_page": 20
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755015700
+}

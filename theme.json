@@ -1,0 +1,76 @@
+{
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"spacing": {
+        	"padding": true,
+			"margin": true,
+			"blockGap": false
+		},
+		"layout": {
+			"contentSize": "56rem",
+			"wideSize": "1340px"
+		},
+		"typography": {
+			"writingMode": false,
+			"customFontSize": true,
+			"dropCap": true,
+			"fontStyle": true,
+			"fontWeight": true,
+			"letterSpacing": false,
+			"lineHeight": false,
+			"textColumns": true,
+			"textDecoration": true,
+			"textTransform": true
+		}
+	},
+	"styles": {
+		"color": {
+			"text": "#0D0D0D",
+			"background": "#F8F8F8"
+		},
+		"elements": {
+			"link": {
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		},
+		"blocks": {
+			"core/imagen": {
+				"spacing": {
+					"padding": {
+						"top": "1rem",
+						"right": "0px!important",
+						"bottom": "1rem",
+						"left": "0px!important"
+					}
+				}
+			}
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	],
+	"customTemplates": [
+		{
+			"name": "page-no-frame",
+			"postTypes": ["page"],
+			"title": "Page No Frame"
+		},
+		{
+			"name": "homepage",
+			"postTypes": ["page"],
+			"title": "Homepage"
+		}
+	]
+}
