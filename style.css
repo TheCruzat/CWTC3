@@ -60,7 +60,7 @@
 		--fontBase: 1.25rem;
 	}
 
-	--contentHeight: calc(100vh - var(--footerHeight));
+	--contentHeight: 100vh;
 
 	--homeHeight: calc(100vh - (var(--footerHeight) + var(--headerHeight) + 0.25rem));
 
