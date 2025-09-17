@@ -191,20 +191,37 @@ function sc_post_tags($atts) {
 add_shortcode('post-tags', 'sc_post_tags');
 
 
-// featured posts set in global options
-function sc_featured_posts() {
-	$feats = get_field('featured_posts', 'options');
-	// pr($opts);
-	// if(is_data_okay('featured_posts', $opts)) {
+function wrapCards($cards) {
 	$str = '<!-- wp:group {"tagName":"div","layout":{"type":"flow"}} -->';
-	$str .= '<div class="md:min-h-[60vh] mt-[0]! md:grid md:grid-cols-2 xl:grid-cols-3 gap-[var(--rails)] p-[var(--rails)] max-w-[100%]!">';
-	foreach($feats as $feat) {
-		$str .=  drawCard($feat);
+	$str .= '<div class="md:min-h-[40vh] mt-[0]! md:grid md:grid-cols-2 xl:grid-cols-3 gap-[var(--rails)] gap-y-[calc(var(--rails)*2)] p-[var(--rails)] max-w-[100%]!">';
+	foreach($cards as $card) {
+		$str .=  drawCard($card);
 	}
 	$str .= '</div>';
 	$str .= '<!-- /wp:group -->';
-	// }
-	// pr($opts);
 	return $str;
 }
+
+
+
+// featured posts set in global options
+function sc_featured_posts() {
+	$feats = get_field('featured_posts', 'options');
+	return wrapCards($feats);
+}
 add_shortcode('featured-posts', 'sc_featured_posts');
+
+
+// recent posts like a mufucker
+function sc_recent_posts($atts) {
+	$a = shortcode_atts( [
+		'count' => 6
+	], $atts );
+	$rece = get_posts([
+		'numberposts'	=> $a['count']
+	]);
+
+	return wrapCards($rece);
+}
+add_shortcode('recent-posts', 'sc_recent_posts');
+
