@@ -13,7 +13,7 @@
 
 <!-- wp:query {"query":{"perPage":5,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"align":"full","layout":{"type":"default"}} -->
 
-	<!-- wp:post-template {"align":"full","layout":{"type":"default"}, "className":"query-list md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-[var(--rails)]"} -->
+	<!-- wp:post-template {"align":"full","layout":{"type":"default"}, "className":"query-list md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-x-[var(--rails)] md:gap-y-[calc(var(--rails)*2)]"} -->
 
 		<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
 		<div class="listing-item wp-block-group alignfull mt-[0]! rounded-[0.75rem] overflow-hidden">

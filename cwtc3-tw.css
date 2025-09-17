@@ -274,6 +274,9 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .mb-4\! {
+    margin-bottom: calc(var(--spacing) * 4) !important;
+  }
   .mb-\[0\.5rem\] {
     margin-bottom: 0.5rem;
   }
@@ -445,6 +448,15 @@
   .gap-\[var\(--rails\)\] {
     gap: var(--rails);
   }
+  .gap-x-\[var\(--rails\)\] {
+    column-gap: var(--rails);
+  }
+  .gap-y-\[calc\(var\(--rails\)\*2\)\] {
+    row-gap: calc(var(--rails) * 2);
+  }
+  .gap-y-\[var\(--rails\)\] {
+    row-gap: var(--rails);
+  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -597,6 +609,12 @@
   .pr-\[var\(--rails\)\] {
     padding-right: var(--rails);
   }
+  .pb-0 {
+    padding-bottom: calc(var(--spacing) * 0);
+  }
+  .pb-\[0\] {
+    padding-bottom: 0;
+  }
   .pb-\[1rem\] {
     padding-bottom: 1rem;
   }
@@ -676,6 +694,14 @@
   .leading-15 {
     --tw-leading: calc(var(--spacing) * 15);
     line-height: calc(var(--spacing) * 15);
+  }
+  .leading-\[var\(--lineHeightHeader\)\] {
+    --tw-leading: var(--lineHeightHeader);
+    line-height: var(--lineHeightHeader);
+  }
+  .font-\[600\] {
+    --tw-font-weight: 600;
+    font-weight: 600;
   }
   .text-\[transparent\] {
     color: transparent;
@@ -1048,6 +1074,11 @@
       margin-bottom: calc(var(--spacing) * 8);
     }
   }
+  .md\:mb-8\! {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 8) !important;
+    }
+  }
   .md\:mb-\[8rem\]\! {
     @media (width >= 48rem) {
       margin-bottom: 8rem !important;
@@ -1106,6 +1137,11 @@
   .md\:h-full {
     @media (width >= 48rem) {
       height: 100%;
+    }
+  }
+  .md\:min-h-\[40vh\] {
+    @media (width >= 48rem) {
+      min-height: 40vh;
     }
   }
   .md\:min-h-\[60vh\] {
@@ -1203,6 +1239,16 @@
       gap: var(--rails);
     }
   }
+  .md\:gap-x-\[var\(--rails\)\] {
+    @media (width >= 48rem) {
+      column-gap: var(--rails);
+    }
+  }
+  .md\:gap-y-\[calc\(var\(--rails\)\*2\)\] {
+    @media (width >= 48rem) {
+      row-gap: calc(var(--rails) * 2);
+    }
+  }
   .md\:bg-\[rgba\(0\,0\,0\,0\.5\)\] {
     @media (width >= 48rem) {
       background-color: rgba(0,0,0,0.5);
@@ -1267,6 +1313,11 @@
   .xl\:mb-12 {
     @media (width >= 80rem) {
       margin-bottom: calc(var(--spacing) * 12);
+    }
+  }
+  .xl\:mb-12\! {
+    @media (width >= 80rem) {
+      margin-bottom: calc(var(--spacing) * 12) !important;
     }
   }
   .xl\:grid-cols-3 {
@@ -1354,6 +1405,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-backdrop-blur {
   syntax: "*";
   inherits: false;
@@ -1408,6 +1463,7 @@
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-leading: initial;
+      --tw-font-weight: initial;
       --tw-backdrop-blur: initial;
       --tw-backdrop-brightness: initial;
       --tw-backdrop-contrast: initial;
