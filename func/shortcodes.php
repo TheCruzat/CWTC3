@@ -133,13 +133,13 @@ function sc_tags_block($atts) {
 	$tcount = count($tags);
 	$tagstr = '<div class="'.$a['class'].'"><div class="p-[var(--rails)] text-[var(--burnt-orange)] bg-[rgba(255,248,232,0.75)] backdrop-blur-[10px] border-[2px] border-[#fff] rounded-[0.5rem]">';
 
-	$tagstr .= '<p>';
+	$tagstr .= '<div>';
 	foreach($tags as $ct => $tag) {
 		$link = get_term_link($tag);
 		if($ct > 0 && $ct < $tcount) $tagstr .= ', ';
 		$tagstr .= '<a class="font-[family-name:var(--fontScript)] text-[115%] text-[var(--burnt-orange)] hover:text-[var(--rich-black)] duration-750 hover:duration-150 ease-in-out" href="'.esc_url($link).'">'.esc_html($tag->name, 'cwtc3').'</a>';
 	}
-	$tagstr .= '</p>';
+	$tagstr .= '</div>';
 	$tagstr .= '</div></div>';
 	return $tagstr;
 }
