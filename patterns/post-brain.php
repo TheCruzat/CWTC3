@@ -122,15 +122,16 @@ if(is_data_okay('settice', $flds)) { $settice = $flds['settice'];
 
 			$sr 		= '<div class="boks clearfix">';
 			$tips 		= $sett['types'];
-			$spawn 		= $sett['spawn'];
-			$spawn_h 	= $sett['spawn_height'];
-			$spawn_t 	= $sett['spawn_trigger'];
+			// $spawn 		= $sett['spawn'];
+			// $spawn_h 	= $sett['spawn_height'];
+			// $spawn_t 	= $sett['spawn_trigger'];
 			$hh 		= $sett['hide_header'];
 			$r_html = $sett['html'];
 			$r_css 	= $sett['css'];
 			$r_js 	= $sett['js'];
 			$r_jq 	= $sett['jq'];
 
+			/*
 			$hs 	= explode(',',$sett['code_height']);
 			// html css js jq php
 
@@ -162,7 +163,7 @@ if(is_data_okay('settice', $flds)) { $settice = $flds['settice'];
 					$code .= ' c trig-'.($curr+1);
 				//}
 				$code .=	'"><iframe height="'.$spawn_h.'" srcdoc="' . shave($cor) . '"></iframe></div>'; // scrolling="no"
-			}
+			} */
 
 			if(in_array('php',$tips)) 	{	$sr .= make_head($sett['php'], 'PHP', 	$hh); 	}
 			if(in_array('css',$tips)) 	{	$sr .= make_head($r_css, 'CSS', 		$hh); 	}
