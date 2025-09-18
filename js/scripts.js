@@ -19,4 +19,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     toggleMobile();
   });
 
+  const textAreas = document.querySelectorAll('.code-bloc textarea');
+  if(textAreas !== null && textAreas.length > 0) {
+    textAreas.forEach((ta, ndx) => {
+      ta.style.height = 'auto';
+      ta.style.height = ta.scrollHeight + 'px';
+    });
+  } else {
+    console.log('no code blocks here');
+  }
+
 });
