@@ -42,7 +42,7 @@
 
 	@media (min-width: 48rem) {
 		--hr: 4rem;
-		--h1: 3.4rem;
+		--h1: 3rem;
 		--h2: 2.8rem;
 		--h3: 2.2rem;
 		--h4: 1.8rem;
@@ -194,8 +194,30 @@ h5 { font-size: var(--h3)  }
 }
 
 .entry-content {
-	p {
-		:last-of-type {
+
+	h2, h3, h4, h5, ul, ol, p {
+		margin-top: 0;
+		margin-bottom: 24px;
+	}
+
+	h2, h3, h4, h5 {
+
+	}
+	ul, ol {
+		padding-left: 24px;
+		li {
+			margin-bottom: 12px;
+		}
+	}
+	ul {
+		list-style: disc;
+	}
+	ol {
+		list-style: decimal;
+	}
+
+	p, li {
+		&:last-of-type {
 			margin-bottom: 0;
 		}
 	}
@@ -375,30 +397,78 @@ button#mobile-menu {
 .code-bloc {
 	display: block;
 	width: 100%;
-	background: var(--rich-black);
-	color: var(--alabaster);
+	background: var(--cosmic-latte);
+	color: var(--rich-black);
 	font-family: "Courier Prime";
-	font-size: 80%;
+	font-size: 70%;
+	line-height: 1.1;
+	margin-bottom: calc(var(--rails)*1);
+
 	textarea {
 		width: 100%;
-		padding: 12px;
+		padding: 0 calc(var(--rails)/2) 0.5rem;
+		text-wrap: wrap;
+		field-sizing: content;
+		min-height: 4rem;
 	}
 }
 
-.init.cap-box {
+.init {
 
-	background: var(--rich-black);
+	background: var(--seal-brown);
 	color: #fff;
-	max-width: 40%;
-	margin-bottom: 1.2rem;
+	margin: 0 auto 1.5rem;
 	font-family: var(--fontHeader);
+	display inline-block;
+	width: auto;
+	max-width: 60%;
 
-	&.left {
-		float: left;
-		margin-right: 1.2rem;
+	&.full-width {
+		max-width: unset;
 	}
-	&.right {
-		float: right;
-		margin-left: 1.2rem;
+
+	&.inv {
+		background: #fff;
+		color: var(--burnt-orange);
+	}
+
+	figcaption {
+		font-size: 125%;
+		padding: 0.5rem 1rem;
+		font-family: var(--fontScript);
+		text-align: center;
+		line-height: 1;
+		margin: 0;
+	}
+}
+
+@media (min-width: 48rem) {
+
+	.code-bloc {
+		margin-inline: calc(var(--rails)*-1);
+		width: unset;
+
+		textarea {
+			padding: 0 var(--rails) calc(var(--rails)/2);
+		}
+	}
+
+	.init {
+		max-width: 40%;
+		margin-left: 0;
+		margin-right: 0;
+
+		&.full-width {
+			margin-inline: calc(var(--rails)*-1);
+		}
+
+		&.left {
+			float: left;
+			margin-right: 1.2rem;
+		}
+		&.right {
+			float: right;
+			margin-left: 1.2rem;
+		}
 	}
 }

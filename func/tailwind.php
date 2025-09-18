@@ -5,4 +5,5 @@
 	px-[var(--rails)]
 	mb-[var(--rails)]!
 	pt-[calc(var(--rails)*2)]
+	md:max-w-[25%]!
 "></div>
