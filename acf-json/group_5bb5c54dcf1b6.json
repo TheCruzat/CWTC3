@@ -3,74 +3,6 @@
     "title": "Code Samples",
     "fields": [
         {
-            "key": "field_555275c1be8a5",
-            "label": "Downloadable Assets",
-            "name": "down_ass",
-            "aria-label": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "row_min": "",
-            "row_limit": "",
-            "layout": "table",
-            "button_label": "Add Link",
-            "min": 0,
-            "max": 0,
-            "collapsed": "",
-            "sub_fields": [
-                {
-                    "key": "field_555275e6be8a6",
-                    "label": "Link Label",
-                    "name": "label",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "formatting": "none",
-                    "maxlength": "",
-                    "parent_repeater": "field_555275c1be8a5"
-                },
-                {
-                    "key": "field_555275f8be8a7",
-                    "label": "Link Asset",
-                    "name": "asset",
-                    "aria-label": "",
-                    "type": "file",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "library": "all",
-                    "return_format": "array",
-                    "min_size": 0,
-                    "max_size": 0,
-                    "mime_types": "",
-                    "parent_repeater": "field_555275c1be8a5"
-                }
-            ],
-            "rows_per_page": 20
-        },
-        {
             "key": "field_546f588235da9",
             "label": "Code Example Sets",
             "name": "settice",
@@ -499,6 +431,74 @@
                 }
             ],
             "rows_per_page": 20
+        },
+        {
+            "key": "field_555275c1be8a5",
+            "label": "Downloadable Assets",
+            "name": "down_ass",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "table",
+            "button_label": "Add Link",
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_555275e6be8a6",
+                    "label": "Link Label",
+                    "name": "label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "none",
+                    "maxlength": "",
+                    "parent_repeater": "field_555275c1be8a5"
+                },
+                {
+                    "key": "field_555275f8be8a7",
+                    "label": "Link Asset",
+                    "name": "asset",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "library": "all",
+                    "return_format": "array",
+                    "min_size": 0,
+                    "max_size": 0,
+                    "mime_types": "",
+                    "parent_repeater": "field_555275c1be8a5"
+                }
+            ],
+            "rows_per_page": 20
         }
     ],
     "location": [
@@ -516,8 +516,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755015700
+    "modified": 1758145775
 }

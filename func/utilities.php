@@ -101,16 +101,16 @@ function comm_r($atts) {
 	global $post;
 	$beg = '&lt;!--&nbsp;';
 	$end = '&nbsp;--&gt;';
-	$u_b = '<span class="qo">';
-	$u_e = '</span>';
+	$u_b = '';
+	$u_e = '';
 	if(has_tag('css',$post)) {
 		$beg = '/*&nbsp;';
-		$end = '&nbsp;* /';
+		$end = '&nbsp;*/';
 	}
 	$beg = $u_b . $beg . $u_e;
 	$end = $u_b . $end . $u_e;
 
-	return '<div class="in-comm"><p>'.esc_html($beg.$c.$end, 'cwtc3').'</p></div>';
+	return '<div style="font-family: var(--fontCode)" class="p-[2rem] text-[80%] border-dashed bg-[rgba(255,248,232,1)] transition-al border-[2px] mb-[24px]!"><p>'.esc_html($beg.$c.$end, 'cwtc3').'</p></div>';
 };
 add_shortcode('comm','comm_r');
 

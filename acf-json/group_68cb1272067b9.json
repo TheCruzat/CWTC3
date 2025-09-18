@@ -1,13 +1,13 @@
 {
-    "key": "group_5bb5c54e1bcf7",
-    "title": "Owner Shouts",
+    "key": "group_68cb1272067b9",
+    "title": "Post - Extras",
     "fields": [
         {
-            "key": "field_549973111d495",
-            "label": "Owner Shouts",
-            "name": "owner_shouts",
+            "key": "field_68cb127288152",
+            "label": "",
+            "name": "",
             "aria-label": "",
-            "type": "textarea",
+            "type": "clone",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,11 +16,15 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": 2,
-            "new_lines": ""
+            "clone": [
+                "group_5bb5c54e1bcf7",
+                "group_5bb5c54db3701",
+                "group_5bb5c54dcf1b6"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         }
     ],
     "location": [
@@ -32,14 +36,14 @@
             }
         ]
     ],
-    "menu_order": 3,
+    "menu_order": 0,
     "position": "normal",
-    "style": "seamless",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1758145637
+    "modified": 1758145758
 }

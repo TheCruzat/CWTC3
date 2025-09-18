@@ -54,6 +54,7 @@ if(is_data_okay('down_ass', $flds)) { $d_ass = $flds['down_ass'];
 	});
 }
 
+/*
 if(is_data_okay('article_images', $flds)) { $a_img = $flds['article_images'];
 	foreach($a_img as $coun => $ai) :
 		$namo = 'img-'.($coun+1);
@@ -98,16 +99,16 @@ if(is_data_okay('article_images', $flds)) { $a_img = $flds['article_images'];
 			}
 		});
 	endforeach;
-}
+} */
 
 if(is_data_okay('settice', $flds)) { $settice = $flds['settice'];
 
-	function make_head($st,$tit,$height,$hh) {
+	function make_head($st,$tit,$hh) {
 		//global $hh;
 		if(!$hh) {
-			$b1 = '<h3 class="hedd code-head">'.$tit.'</h3>';
+			$b1 = '<h3 style="font-family: var(--fontScript)" class="text-[2rem]! mb-[1rem]! text-[var(--burnt-orange)] py-[calc(var(--rails)/2)] px-[var(--rails)]">'.$tit.'</h3>';
 		} else {	$b1 = '';	}
-		return '<div class="code-bloc">'.$b1.'<textarea class="code" style="height:'.$height.';" wrap="off">'.shave($st).'</textarea></div>';//<pre class="lang:'.$lang.'"><code>'.shave($st).'</code></pre>';
+		return '<div class="code-bloc">'.$b1.'<textarea class="code" wrap="off">'.shave($st).'</textarea></div>';//<pre class="lang:'.$lang.'"><code>'.shave($st).'</code></pre>';
 	}
 
 	foreach($settice as $coun => $sett) :
@@ -163,11 +164,11 @@ if(is_data_okay('settice', $flds)) { $settice = $flds['settice'];
 				$code .=	'"><iframe height="'.$spawn_h.'" srcdoc="' . shave($cor) . '"></iframe></div>'; // scrolling="no"
 			}
 
-			if(in_array('php',$tips)) 	{	$sr .= make_head($sett['php'], 'PHP', 	$hs[0], $hh); 	}
-			if(in_array('css',$tips)) 	{	$sr .= make_head($r_css, 'CSS', 		$hs[1], $hh); 	}
-			if(in_array('html',$tips)) 	{	$sr .= make_head($r_html, 'HTML', 		$hs[0], $hh);	}
-			if(in_array('js',$tips)) 	{	$sr .= make_head($r_js, 'Javascript', 	$hs[2], $hh); 	}
-			if(in_array('jq',$tips)) 	{	$sr .= make_head($r_jq, 'JQuery', 		$hs[3], $hh); 	}
+			if(in_array('php',$tips)) 	{	$sr .= make_head($sett['php'], 'PHP', 	$hh); 	}
+			if(in_array('css',$tips)) 	{	$sr .= make_head($r_css, 'CSS', 		$hh); 	}
+			if(in_array('html',$tips)) 	{	$sr .= make_head($r_html, 'HTML', 		$hh);	}
+			if(in_array('js',$tips)) 	{	$sr .= make_head($r_js, 'Javascript', 	$hh); 	}
+			if(in_array('jq',$tips)) 	{	$sr .= make_head($r_jq, 'JQuery', 		$hh); 	}
 
 
 			if(isset($code)) 	{
