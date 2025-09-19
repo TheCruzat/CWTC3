@@ -295,6 +295,9 @@
   .mb-\[0rem\] {
     margin-bottom: 0rem;
   }
+  .mb-\[0rem\]\! {
+    margin-bottom: 0rem !important;
+  }
   .mb-\[1rem\] {
     margin-bottom: 1rem;
   }
