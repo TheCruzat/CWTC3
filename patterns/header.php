@@ -31,6 +31,7 @@ $opts = get_fields('options');
 			<span></span>
 			<span></span>
 			<span></span>
+			<?php svg('coffee-solid', 'w-[2rem] h-auto'); ?>
 		</button>
 	</div>
 </div>
