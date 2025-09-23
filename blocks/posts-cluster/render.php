@@ -6,7 +6,7 @@
 
 include(dirname(__FILE__) . '/../block-meta.php');
 
-$con_class = "md:min-h-[40vh] mt-[0]! md:grid md:grid-cols-2 xl:grid-cols-3 gap-[var(--rails)] p-[var(--rails)]"; // "md:grid md:grid-cols-3 md:gap-[4rem]";
+$con_class = "md:min-h-[40vh] mt-[0]! grid md:grid-cols-2 xl:grid-cols-3 gap-x-[var(--rails)] gap-y-[calc(var(--rails)*2)] p-[var(--rails)]"; // "md:grid md:grid-cols-3 md:gap-[4rem]";
 
 
 ?>

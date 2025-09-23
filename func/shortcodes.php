@@ -193,7 +193,7 @@ add_shortcode('post-tags', 'sc_post_tags');
 
 function wrapCards($cards) {
 	$str = '<!-- wp:group {"tagName":"div","layout":{"type":"flow"}} -->';
-	$str .= '<div class="md:min-h-[40vh] mt-[0]! md:grid md:grid-cols-2 xl:grid-cols-3 gap-[var(--rails)] gap-y-[calc(var(--rails)*2)] p-[var(--rails)] max-w-[100%]!">';
+	$str .= '<div class="md:min-h-[40vh] mt-[0]! grid md:grid-cols-2 xl:grid-cols-3 gap-[var(--rails)] gap-y-[calc(var(--rails)*2)] p-[var(--rails)] max-w-[100%]!">';
 	foreach($cards as $card) {
 		$str .=  drawCard($card);
 	}
