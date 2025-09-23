@@ -1063,6 +1063,11 @@
       margin-bottom: 0.25rem;
     }
   }
+  .max-md\:mb-\[1rem\] {
+    @media (width < 48rem) {
+      margin-bottom: 1rem;
+    }
+  }
   .max-md\:mb-\[2rem\] {
     @media (width < 48rem) {
       margin-bottom: 2rem;

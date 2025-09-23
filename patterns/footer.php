@@ -22,7 +22,7 @@ $hs = wp_get_attachment_image_url($opts['about_headshots'][$hsr], 'thumbnail');
 
 <div class="backdrop-blur-[4px] bg-[rgba(188,93,46,0.1)] max-md:text-center">
 	<div class="container max-w-[var(--wp--style--global--content-size)] mx-auto md:h-full md:grid md:grid-cols-[150px_1fr_auto] items-center p-[calc(var(--rails)*1)] max-md:p-[calc(var(--rails)*2)]">
-		<span class="overflow-hidden inline-block w-[120px] rounded-full mb-[1rem]"><img width="120" height="120" src="<?= esc_url($hs) ?>" alt="<?= esc_attr('Dan Cruzat is a builder', 'cwtc3'); ?>" /></span>
+		<span class="overflow-hidden inline-block w-[120px] rounded-full max-md:mb-[1rem]"><img width="120" height="120" src="<?= esc_url($hs) ?>" alt="<?= esc_attr('Dan Cruzat is a builder', 'cwtc3'); ?>" /></span>
 		<div class="footer-blurb text-[1rem] max-w-[300px] max-md:mx-auto max-md:mb-[2rem]"><?= cn($opts['about_info']) ?></div>
 		<?php if(is_data_okay('social_links', $opts)) { ?>
 		<div class="max-md:max-w-[200px] max-md:mx-auto">
