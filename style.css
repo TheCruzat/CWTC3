@@ -319,7 +319,9 @@ button,
 }
 
 button#mobile-menu {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: relative;
 	height: 48px;
 	width: 48px;
@@ -328,28 +330,38 @@ button#mobile-menu {
 	transition: all 0.2s ease-out;
 /*	border-radius: 50%;*/
 /*	border: 2px solid red;*/
+
+	svg {
+		position: relative;
+		z-index: 1;
+		margin: 0;
+		transition: all 0.2s ease-in-out;
+		path {
+			fill: var(--burnt-orange);
+		}
+	}
 	span {
 		display: block;
 		width: 0px;
 		background: #fff;
-		height: 4px;
+		height: 2px;
 		position: absolute;
-		left: calc(50% - 0px);
-		top: calc(50% - 2px);
+		left: calc(50% + 0px);
+		top: calc(50% - 1px);
 		background: #fff;
 		z-index: 2;
 		transition: 0.2s all ease-out;
 
 		&:nth-child(1) {
-			transform: rotate(45deg);
+			transform: rotate(0deg);
 		}
 		&:nth-child(2) {
-			transform: rotate(-45deg);
+			transform: rotate(-90deg);
 		}
 		&:nth-child(3) {
 			height: 16px;
 			width: 16px;
-			border: 3px solid var(--burnt-orange);
+			/*			border: 3px solid var(--burnt-orange);*/
 			border-radius: 50%;
 			background: var(--cosmic-latte);
 			top: calc(50% - 8px);
@@ -363,20 +375,27 @@ button#mobile-menu {
 	}
 
 	.mobile-open & {
-		transform: rotate(-90deg);
+		transform: rotate(-135deg);
+		svg {
+			margin-top: 3px;
+			margin-left: 3px;
+			path {
+				/*				fill: var();*/
+			}
+		}
 		span {
 			&:nth-child(1),
 			&:nth-child(2) {
-				width: 48px;
-					left: calc(50% - 24px);
+				width: 10px;
+				left: calc(50% - 5px);
 				background: var(--cosmic-latte);
 			}
 			&:nth-child(3) {
-				border: 12px solid var(--seal-brown);
-				width: 24px;
-				height: 24px;
-				top: calc(50% - 12px);
-				left: calc(50% - 12px);
+				/*				border: 12px solid var(--seal-brown);*/
+				width: 18px;
+				height: 18px;
+				top: calc(50% - 9px);
+				left: calc(50% - 9px);
 			}
 		}
 	}
