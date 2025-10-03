@@ -13,4 +13,4 @@ This build is for demonstration purposes only. If you choose to download this th
 
 ## Benediction
 
-I've worked in WordPress for a verrry long time, and this build has all of my bells and whistles, all of my best card tricks. Many of them I've adapted from the work of other developers, we are nothing without our community. If something in here helps you figure out something new and cool, please share it. Share with the garden that has fed you.
+I've worked in WordPress for a verrry long time, and this build has all of my bells and whistles, all of my best card tricks. Many of them I've adapted from the work of other developers, we are nothing without our community. If something in here helps you figure out something new and cool, please share it. Feed the garden that has fed you.
