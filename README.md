@@ -9,7 +9,11 @@ I had several goals in my sights on this build:
 - Leverage [TailwindCSS](https://tailwindcss.com) for layout development
 - Hydrate properly -- water is coffee's best friend
 
-This build is for demonstration purposes only. If you choose to download this theme and try to run it, you will need ACF Pro installed for it to function properly.
+## Highlights
+
+- ["Post Brain"](https://github.com/TheCruzat/CWTC3/blob/main/patterns/post-brain.php) and ["Post Boot"](https://github.com/TheCruzat/CWTC3/blob/main/patterns/post-boot.php) both successfully migrated from OG template to modern include, original content intact
+
+This build is for demonstration purposes only.
 
 ## Benediction
 
